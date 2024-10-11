@@ -1,0 +1,8 @@
+//    *.html     //ignora todos los archivos html
+
+// img/        //ignora la carpeta img
+
+
+// index.html    //ignora el archivo
+
+node_modules/
