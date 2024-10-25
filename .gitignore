@@ -6,3 +6,4 @@
 // index.html    //ignora el archivo
 
 node_modules/
+*.json

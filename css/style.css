@@ -405,7 +405,7 @@ footer a img{
 /*?-----------servicios-----------------*/
 
 
-.fixed a img{
+.fixed a img{    /*esto es del index*/
     width: 60px;
     height: 60px;
     position: fixed;

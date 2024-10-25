@@ -1,0 +1,559 @@
+//TODO--------------------- MEDIA QUERIES------------------
+
+@media screen and (max-width: 1400px) {
+    /*! ----INDEX----*/
+    .Bienvenidos{
+        div{
+            .divMedia{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+
+                    p{
+                        width: 40%; 
+                    }
+
+                    img{
+                        width: 50%;
+                        height: 60vh;
+                    }
+            }
+
+            .BienvenidosImg{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    /*! ----INDEX----*/
+
+    .hero{
+        div{
+            p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .carrusel{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 500px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*!------NOSOTROS------------*/
+    .nosotros{
+        div{
+            p{
+                margin-top: 15px;
+                width: 60%;
+            }
+
+            img{
+                width: 60%;
+            }
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                flex-direction: column;
+            
+                h3{
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+    
+            .mercadolibre{
+                flex-direction: column;
+                
+                h3{
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    section{
+        .nosotros{
+            div{
+                flex-direction: column-reverse !important;
+
+                img{
+                    width: 55%;
+                }
+
+                p{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    /*! ----INDEX----*/  
+    .Bienvenidos{
+        div{
+            .divMedia{
+                img{
+                    height: 50vh;
+                }
+            }
+        }
+    }
+    /*! ----PRODUCTOS----*/
+    .productos{
+        .contenedor-grid{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            h3{
+                font-size: 2.5rem;
+            }
+    
+            div{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+    }
+
+
+@media screen and (max-width: 900px){
+    /*! ----INDEX----*/
+    .hero{
+        div{
+            p{
+                width: 90%;
+            }
+        }
+    }
+    
+    /*! ----PRODUCTOS----*/
+    .productos{
+        .contenedor-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /*!-------NOSOTROS------*/
+    section{
+        .nosotros{
+            h2{
+                font-size: 4rem; 
+                font-weight: bold;
+            }
+
+            h3{
+                width: 90%;
+            }
+            
+            div{
+                img{
+                    width: 70%;
+                }
+            }
+
+            .texto2{
+                img{
+                    height: 50vh;
+                }
+            }
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    height: 35vh;
+                    p{
+                        width: 50%;
+                    }
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+
+            .mercadolibre{
+                height: 35vh;
+                div{
+                    img{
+                        width: 30%;
+                        height: 100%;
+                    }
+
+                    p{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    /*! ----INDEX----*/  
+    .hero{
+        div{
+            p{
+                width: 100%;
+            }
+        }
+    }
+
+    .Bienvenidos{
+        div{
+            .divMedia{
+                flex-direction: column;
+
+                p{
+                    width: 80%;
+                    margin: 10px;
+                }
+
+                img{
+                    width: 70%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    
+    .carrusel{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 400px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            div{
+                p{
+                    width: 80%;
+                }
+            }
+    
+            .texto2{
+                .img2{
+                    height: 50vh;
+                }
+            }
+    
+            .texto5{
+                .img5{
+                    width: 50% ;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 750px){
+    /*!------NOSOTROS------------*/
+    .nosotros{
+        h3{
+            font-size: 2rem;
+        }
+        
+        .texto2{
+            img{
+                height: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .productos{
+        .contenedor-grid{
+            .producto{
+                img{
+                    width: 60%;
+                }
+
+                h3{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /*! ----INDEX----*/
+    .Bienvenidos{
+        div{
+            .divMedia{
+                width: 100%;
+                padding: 10px;
+
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .carrusel{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*! ----CONTACTO----*/
+    .form{
+        .cont-flex{
+            form{
+                width: 80%;
+            }
+        }
+    }
+
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            h2{
+                font-size: 3rem;
+            }
+            h3{
+                width: 98%;
+            }
+            
+            div{
+                p{
+                    width: 90%;
+                    font-size: 1.2rem;
+                }
+            }
+    
+            .texto1{
+                .img1{
+                    width: 80%;
+                }
+            }
+    
+            .texto2{
+                .img2{
+                    width: 50%;
+                }
+            }
+            
+            .texto3{
+                .img3{
+                    width: 80%;
+                }
+            }
+
+            .texto5{
+                .img5{
+                    width: 60%;
+                }
+            }
+    }
+    }    
+}
+
+@media screen and (max-width: 550px) {
+    /*!------INDEX--------*/
+    .Bienvenidos{
+        div{
+            .divMedia{
+                img{
+                    width: 95%;
+                    height: 40vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .productos{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            
+            h2{
+                width: 100%;
+            }
+            .contenedor-grid{
+            grid-template-columns: 1fr;
+            width: 70%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    /*! ----INDEX----*/
+    .Bienvenidos{
+        div{
+            .divMedia{
+                p{
+                    font-size: 17px;
+                }
+                
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            h2{
+                font-size: 2.5rem;
+            }
+
+            h3{
+                font-size: 1.7rem;
+            }
+
+            .texto1{
+                .img1{
+                    width: 90%;
+                }
+            }
+
+            .texto2{
+                .img2{
+                    width: 60%;
+                }
+            }
+
+            .texto3{
+                .img3{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /*! ----INDEX----*/
+    .hero{
+        div{
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+    
+    
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            h2{
+                font-size: 2.1rem;
+            }
+
+            .texto1{
+                .img1{
+                    width: 100%;
+                    padding: 2px
+                }
+            }
+
+            .texto3{
+                .img3{
+                    width: 100%;
+                    padding: 2px
+                }
+            }
+        }
+    }
+
+    /*!------CONTACTO------------*/
+    .form{
+        .cont-flex{
+            form{
+                width: 100%;
+            }
+        }
+    }
+
+    /*!------PRODUCTO------------*/
+    .productos{
+        .contenedor-grid{
+                width: 80%;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*! ----INDEX----*/
+    .Bienvenidos{
+        div{
+            .divMedia{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .carrusel{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

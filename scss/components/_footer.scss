@@ -1,0 +1,15 @@
+footer{
+    background-color: $color-principal;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    a{
+
+        img{
+            padding: 5px;
+            margin: 5px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

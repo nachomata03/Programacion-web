@@ -1,0 +1,25 @@
+header{
+    background-color: $color-principal;
+
+    nav{
+        
+        .container-fluid{
+
+            .collapse{
+
+                ul{
+
+                    li{
+
+                        a{
+                            color: $color-secundario;
+                            &:hover{
+                                color: nth($colores, 2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

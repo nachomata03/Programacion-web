@@ -1,0 +1,27 @@
+/* FUNCIONALIDADES */
+
+$color-principal: #adadf3;
+$color-secundario: #ffffff;
+
+$colores : #000000, #cc8bff, #8bbeff, #928bff;
+
+%boton{
+    color: $color-secundario;
+    background-color: $color-principal;
+    border: 1px solid $color-principal;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 2px;
+}
+
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin flex-direction ($flex, $direction, $aling){
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $aling;
+}

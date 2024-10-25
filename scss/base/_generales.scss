@@ -1,0 +1,15 @@
+/*cosas generales como fuentes , reeset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*esto es para que a un objeto con un tamaño especifico si se le agrega un borde/padding o lo que sea no se agrande mas sino que se achica el contenido y que quede del tamaño indicado inicialmente*/
+}
+
+a{
+    text-decoration: none !important;
+}
+
+
+
+
