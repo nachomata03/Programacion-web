@@ -43,7 +43,7 @@ main .hero {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       padding: 4px;
       margin: 4px;
-      color: #000;
+      color: #000000;
       border: 4px solid #ffffff;
       border-radius: 5px; }
     main .hero div p {
@@ -52,15 +52,22 @@ main .hero {
       font-size: 20px;
       font-weight: bold;
       padding: 10px;
-      color: #000;
+      color: #000000;
       width: 80%; }
+    main .hero div a {
+      transition: 1s ease-in; }
+      main .hero div a:hover {
+        transform: scale(1.1);
+        box-shadow: 5.2px 6.7px 4.8px rgba(0, 0, 0, 0.056), 14.3px 18.7px 13.4px rgba(0, 0, 0, 0.08), 34.4px 44.9px 32.3px rgba(0, 0, 0, 0.104), 114px 149px 107px rgba(0, 0, 0, 0.16); }
 
 main .Bienvenidos {
   margin-top: 20px; }
   main .Bienvenidos h3 {
     text-align: center;
-    font-size: 30px;
-    margin: 15px; }
+    font-size: 45px;
+    margin: 15px;
+    margin-bottom: 20px;
+    text-shadow: -6px 4px 5px rgba(138, 56, 255, 0.85); }
   main .Bienvenidos div {
     text-align: center;
     margin: 5px;
@@ -86,6 +93,8 @@ main .prod-index {
     padding: 10px;
     text-align: center;
     background: linear-gradient(90deg, #adadf3 35%, rgba(255, 255, 255, 0.983631) 100%); }
+    main .prod-index h2 a {
+      color: #000000; }
   main .prod-index .contenedor-flex {
     display: flex;
     justify-content: space-around;
@@ -100,7 +109,8 @@ main .prod-index {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      transition: 3s ease; }
       main .prod-index .contenedor-flex div img {
         height: 250px;
         width: 250px;
@@ -110,17 +120,39 @@ main .prod-index {
         margin: 10px; }
       main .prod-index .contenedor-flex div p {
         display: block; }
+      main .prod-index .contenedor-flex div a {
+        /*                             box-shadow:
+                                    0.9px 0.9px 19.6px rgba(0, 0, 0, 0.07),
+                                    1.9px 2px 23.1px rgba(0, 0, 0, 0.101),
+                                    3.8px 4.1px 23.7px rgba(0, 0, 0, 0.128),
+                                    24px 26px 22px rgba(0, 0, 0, 0.16);    */ }
+      main .prod-index .contenedor-flex div:hover {
+        transform: scale(1.1);
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.042), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.061), 12.5px 12.5px 10px rgba(0, 0, 0, 0.075), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.089), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.108), 100px 100px 80px rgba(0, 0, 0, 0.15); }
 
 main .carrusel {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
   background: linear-gradient(0deg, #adadf3 35%, rgba(255, 255, 255, 0.983631) 100%); }
+  main .carrusel .carousel-inner .carousel-item {
+    transition: 1s; }
   main .carrusel .carousel-inner .carousel-item img {
     width: 600px;
     height: 500px; }
+  main .carrusel #flechaEnlace {
+    width: 100%;
+    margin-top: 40px; }
+    main .carrusel #flechaEnlace a {
+      display: flex;
+      justify-content: left; }
+      main .carrusel #flechaEnlace a i {
+        font-size: 3rem;
+        color: #000000; }
 
 main .fixed a {
   margin: 0;
@@ -348,19 +380,27 @@ footer {
   section .nosotros .texto2 img {
     height: 50vh; }
   /*!------SERVICIOS------------*/
-  section .services .delivery div {
-    height: 35vh; }
+  section .services {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
     section .services .delivery div p {
-      width: 50%; }
+      width: 100%; }
     section .services .delivery div img {
       width: 30%; }
-  section .services .mercadolibre {
-    height: 35vh; }
-    section .services .mercadolibre div img {
-      width: 30%;
-      height: 100%; }
-    section .services .mercadolibre div p {
-      width: 70%; } }
+    section .services .mercadolibre div {
+      flex-direction: column; }
+      section .services .mercadolibre div img {
+        width: 30%; }
+      section .services .mercadolibre div p {
+        margin-top: 10px;
+        width: 100%; } }
+
+@media screen and (max-width: 850px) {
+  /*!------SERVICIOS------------*/
+  section .services .mercadolibre div img {
+    height: 200px;
+    width: 50%; } }
 
 @media screen and (max-width: 800px) {
   /*! ----INDEX----*/
@@ -383,14 +423,27 @@ footer {
   section .nosotros .texto2 .img2 {
     height: 50vh; }
   section .nosotros .texto5 .img5 {
-    width: 50%; } }
+    width: 50%; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery div {
+    flex-direction: column; }
+    section .services .delivery div img {
+      height: 300px;
+      width: 40%; }
+    section .services .delivery div p {
+      width: 95%; } }
 
 @media screen and (max-width: 750px) {
   /*!------NOSOTROS------------*/
   .nosotros h3 {
     font-size: 2rem; }
   .nosotros .texto2 img {
-    height: 40%; } }
+    height: 40%; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery div img {
+    width: 50%; }
+  section .services .mercadolibre div p {
+    width: 95%; } }
 
 @media screen and (max-width: 700px) {
   .productos .contenedor-grid .producto img {
@@ -426,6 +479,9 @@ footer {
   section .nosotros .texto3 .img3 {
     width: 80%; }
   section .nosotros .texto5 .img5 {
+    width: 60%; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery div img {
     width: 60%; } }
 
 @media screen and (max-width: 550px) {
@@ -442,7 +498,12 @@ footer {
       width: 100%; }
     .productos .contenedor-grid {
       grid-template-columns: 1fr;
-      width: 70%; } }
+      width: 70%; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery div img {
+    width: 70%; }
+  section .services .mercadolibre div img {
+    width: 60%; } }
 
 @media screen and (max-width: 500px) {
   /*! ----INDEX----*/
@@ -480,7 +541,18 @@ footer {
     width: 100%; }
   /*!------PRODUCTO------------*/
   .productos .contenedor-grid {
-    width: 80%; } }
+    width: 80%; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery h3 {
+    width: 100%;
+    text-align: center; }
+  section .services .delivery div img {
+    width: 80%; }
+  section .services .mercadolibre h3 {
+    width: 100%;
+    text-align: center; }
+  section .services .mercadolibre div img {
+    width: 70%; } }
 
 @media screen and (max-width: 400px) {
   /*! ----INDEX----*/
@@ -488,4 +560,9 @@ footer {
     width: 100%; }
   .carrusel .carousel .carousel-inner .carousel-item img {
     width: 250px;
-    height: 250px; } }
+    height: 250px; }
+  /*!------SERVICIOS------------*/
+  section .services .delivery div img {
+    width: 100%; }
+  section .services .mercadolibre div img {
+    width: 100%; } }

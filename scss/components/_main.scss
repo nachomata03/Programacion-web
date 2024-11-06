@@ -19,7 +19,7 @@ main{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 padding: 4px;
                 margin: 4px;
-                color: #000;
+                color: nth($colores, 1);
                 border: 4px solid $color-secundario;
                 border-radius: 5px;
             }
@@ -30,12 +30,23 @@ main{
                 font-size: 20px;
                 font-weight: bold;
                 padding: 10px;
-                color: #000;
+                color: nth($colores, 1);
                 width: 80%;
             }
 
             a{
-                @extend %boton
+                @extend %boton;
+                
+                transition: 1s ease-in;
+
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow:
+                        5.2px 6.7px 4.8px rgba(0, 0, 0, 0.056),
+                        14.3px 18.7px 13.4px rgba(0, 0, 0, 0.08),
+                        34.4px 44.9px 32.3px rgba(0, 0, 0, 0.104),
+                        114px 149px 107px rgba(0, 0, 0, 0.16);
+                }
             }
         }
     }
@@ -45,8 +56,10 @@ main{
 
                 h3{
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 45px;
                     margin: 15px;
+                    margin-bottom: 20px;
+                    text-shadow: -6px 4px 5px rgba(138,56,255,0.85);
                 }
 
                 div{
@@ -81,11 +94,14 @@ main{
     .prod-index{
                 margin-top: 20px;
 
-                h2{
-                    padding: 10px;
-                    text-align: center;
-                    background: linear-gradient(90deg, $color-principal 35%, rgba(255,255,255,0.9836309523809523) 100%);
-                }
+                    h2{
+                        a{
+                            color: nth($colores, 1);
+                        } 
+                        padding: 10px;
+                        text-align: center;
+                        background: linear-gradient(90deg, $color-principal 35%, rgba(255,255,255,0.9836309523809523) 100%);
+                    }
 
                 .contenedor-flex{
                     @include flex(flex, space-around, center);
@@ -116,21 +132,61 @@ main{
                         }
 
                         a{
-                            @extend %boton
+                            @extend %boton;
+/*                             box-shadow:
+                                    0.9px 0.9px 19.6px rgba(0, 0, 0, 0.07),
+                                    1.9px 2px 23.1px rgba(0, 0, 0, 0.101),
+                                    3.8px 4.1px 23.7px rgba(0, 0, 0, 0.128),
+                                    24px 26px 22px rgba(0, 0, 0, 0.16);    */
+                        }
+
+                        transition: 3s ease;
+                        
+                        &:hover{
+                            transform: scale(1.1);
+                            box-shadow:
+                                    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.042),
+                                    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.061),
+                                    12.5px 12.5px 10px rgba(0, 0, 0, 0.075),
+                                    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.089),
+                                    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.108),
+                                    100px 100px 80px rgba(0, 0, 0, 0.15)
+;
                         }
                     }
                 }
     }
 
     .carrusel{
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 40px;
             @include flex(flex, center, center);
             padding: 30px;
             background: linear-gradient(0deg, $color-principal 35%, rgba(255,255,255,0.9836309523809523) 100%);
 
+            .carousel-inner .carousel-item{
+                transition: 1s;
+            }
+
             .carousel-inner .carousel-item img{
                 width: 600px;
                 height: 500px;
+            }
+
+            #flechaEnlace{
+                width: 100%;
+                margin-top: 40px;
+                a{
+                    display: flex;
+                    justify-content: left;
+                    
+                    i{
+                        font-size: 3rem;
+                        color: nth($colores, 1)
+                    }
+                }
             }
         }
 

@@ -194,11 +194,14 @@
     /*!------SERVICIOS------------*/
     section{
         .services{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
             .delivery{
                 div{
-                    height: 35vh;
                     p{
-                        width: 50%;
+                        width: 100%;
                     }
                     img{
                         width: 30%;
@@ -207,15 +210,16 @@
             }
 
             .mercadolibre{
-                height: 35vh;
                 div{
+                    flex-direction: column;
                     img{
                         width: 30%;
-                        height: 100%;
+
                     }
 
                     p{
-                        width: 70%;
+                        margin-top: 10px;
+                        width: 100%;
                     }
                 }
             }
@@ -223,6 +227,22 @@
     }
 }
 
+@media screen and (max-width: 850px){
+/*!------SERVICIOS------------*/
+
+section{
+    .services{
+        .mercadolibre{
+            div{
+                img{
+                    height: 200px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+}
 
 @media screen and (max-width: 800px) {
     /*! ----INDEX----*/  
@@ -288,6 +308,25 @@
         }
     }
 
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    flex-direction: column;
+                    img{
+                        height: 300px;
+                        width: 40%;
+                    }
+
+                    p{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -301,6 +340,27 @@
         .texto2{
             img{
                 height: 40%;
+            }
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+
+            .mercadolibre{
+                div{
+                    p{
+                        width: 95%;
+                    }
+                }
             }
         }
     }
@@ -400,7 +460,20 @@
                 }
             }
     }
-    }    
+    }   
+    
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -428,6 +501,27 @@
             .contenedor-grid{
             grid-template-columns: 1fr;
             width: 70%;
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .mercadolibre{
+                div{
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
         }
     }
 }
@@ -531,6 +625,37 @@
             
         }
     }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                h3{
+                    width: 100%;
+                    text-align: center;
+                }
+
+                div{
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+
+            .mercadolibre{
+                h3{
+                    width: 100%;
+                    text-align: center;
+                }
+
+                div{
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -551,6 +676,27 @@
                     img{
                         width: 250px;
                         height: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    section{
+        .services{
+            .delivery{
+                div{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .mercadolibre{
+                div{
+                    img{
+                        width: 100%;
                     }
                 }
             }

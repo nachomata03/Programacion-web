@@ -4,14 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description-->
+    <meta name="description" content="¡Bienvenidos a Santas golosinas! Nuestra misión es ofrecerte los mejores dulces y golosinas de las mejores marcas y emprendedores locales. 
+    Disfruta de una experiencia única con nuestra variada selección, pensada especialmente para ti.">
+    <!--Keywords-->
+    <meta name="keyword" content="santas golosinas, alfajores, dulces, cumpleaños, jugos, fantoche, don satur, pico dulce, baggio, galletitas, jorgito, guaymallen, pack golosinas, pipas, bolsita cumpleaños">
+    <!--Protocolo open graph-->
+    <meta property="og:type" content="Web site">
+    <meta property="og:title" content="Santas Golosinas">
+    <meta property="og:url" content="https:"><!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <meta property="og:image" content="https:"><!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <meta property="og:description" content="¡Bienvenidos a Santas golosinas! Disfruta de una experiencia única con los mejores dulces y golosinas de las mejores marcas y emprendedores locales. ">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- TITULO -->
     <title>Santas golosinas</title>
 
     <!--<link rel="stylesheet" href="./css/style.css">-->
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="./img/dulce.png">
 
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +74,7 @@
     </header>
 
     <main>
-        <section class="hero"> <!--hero section-->
+        <section class="hero" id="hero"> <!--hero section-->
             <div>
                 <h2>¡Bienvenidos a Santas golosinas!</h2>
                 <p>Nuestra misión es ofrecerte los mejores dulces y golosinas de las mejores marcas y emprendedores locales. 
@@ -78,7 +98,7 @@
 
         <section class="productos prod-index"> <!-- seccion de productos-->
 
-            <h2>Productos destacados</h2>
+            <h2><a href="./pages/productos.html">Productos destacados</a></h2>
 
             <div class="contenedor-flex"> <!-- div creado para poder aplicar flexbox-->
                 <div>
@@ -138,9 +158,14 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            <div id="flechaEnlace">
+                <a href="#hero"><i class="bi bi-arrow-up-square-fill"></i></a>
+            </div>
+            
         </section>
 
-        <a href="#pie">Pie de página</a>
+        
 
         <div class="fixed">
             <a href="">
@@ -149,7 +174,7 @@
         </div>
     </main>
 
-    <footer id="pie"> <!--! ACORDARTE DE PONER EL INSTAGRAM DE LA TIENDA-->
+    <footer> <!--! ACORDARTE DE PONER EL INSTAGRAM DE LA TIENDA-->
         <a href="https://instagram.com" target="_blank">
             <img src="./img/instagram (1).png" alt="Logo de instagram">
         </a>
