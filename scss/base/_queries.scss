@@ -56,15 +56,20 @@
     }
 
     /*!------NOSOTROS------------*/
-    .nosotros{
-        div{
-            p{
-                margin-top: 15px;
-                width: 60%;
-            }
+    section{
+        .nosotros{
+            div{
+                div{
+                    padding: 10px;
+                    p{
+                        margin-top: 15px;
+                        width: 50%;
+                    }
 
-            img{
-                width: 60%;
+                    img{
+                        width: 50%;
+                    }
+                }
             }
         }
     }
@@ -109,6 +114,23 @@
             }
         }
     }
+
+    section{
+        .nosotros{
+            div{
+                div{
+                    flex-direction: column-reverse;
+                    p{
+                        width: 70%;
+                    }
+
+                    img{
+                        width: 55%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -133,13 +155,11 @@
     /*!------NOSOTROS------------*/
     section{
         .nosotros{
-            h3{
-                font-size: 2.5rem;
-            }
-    
             div{
-                p{
-                    font-size: 20px;
+                div{
+                    p{
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -168,27 +188,38 @@
     /*!-------NOSOTROS------*/
     section{
         .nosotros{
+            
             h2{
                 font-size: 4rem; 
                 font-weight: bold;
             }
 
-            h3{
-                width: 90%;
-            }
-            
             div{
-                img{
-                    width: 70%;
+                .divTitulo{
+                    h3{
+                        font-size: 2.5rem;
+                    }
                 }
-            }
-
-            .texto2{
-                img{
-                    height: 50vh;
+                
+                div{
+                    img{
+                        width: 70%;
+                    }
+                    p{
+                        width: 80%;
+                    }
                 }
-            }
+    
+                .texto2{
+                    img{
+                        height: 50vh;
+                    }
+                }
+                }
         }
+
+
+        
     }
 
     /*!------SERVICIOS------------*/
@@ -289,20 +320,22 @@
     section{
         .nosotros{
             div{
-                p{
-                    width: 80%;
+                div{
+                    p{
+                        width: 90%;
+                    }
                 }
-            }
-    
-            .texto2{
-                .img2{
-                    height: 50vh;
+        
+                .texto2{
+                    .img2{
+                        height: 50vh;
+                    }
                 }
-            }
-    
-            .texto5{
-                .img5{
-                    width: 50% ;
+        
+                .texto5{
+                    .img5{
+                        width: 50% ;
+                    }
                 }
             }
         }
@@ -332,14 +365,14 @@
 
 @media screen and (max-width: 750px){
     /*!------NOSOTROS------------*/
-    .nosotros{
-        h3{
-            font-size: 2rem;
-        }
-        
-        .texto2{
-            img{
-                height: 40%;
+    section{
+        .nosotros{
+            div{
+                .texto2{
+                    img{
+                        height: 40%;
+                    }
+                }
             }
         }
     }
@@ -392,6 +425,19 @@
             }
         }
     }
+
+    /*! ----NOSOTROS----*/
+    section{
+        .nosotros{
+            div{
+                .divTitulo{
+                    h3{
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -437,38 +483,41 @@
             h2{
                 font-size: 3rem;
             }
-            h3{
-                width: 98%;
-            }
             
             div{
-                p{
-                    width: 90%;
-                    font-size: 1.2rem;
+                .divTitulo{
+                    h3{
+                        font-size: 2rem;
+                    }
                 }
-            }
+                div{
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+        
+                .texto1{
+                    .img1{
+                        width: 80%;
+                    }
+                }
+        
+                .texto2{
+                    .img2{
+                        width: 50%;
+                    }
+                }
+                
+                .texto3{
+                    .img3{
+                        width: 80%;
+                    }
+                }
     
-            .texto1{
-                .img1{
-                    width: 80%;
-                }
-            }
-    
-            .texto2{
-                .img2{
-                    width: 50%;
-                }
-            }
-            
-            .texto3{
-                .img3{
-                    width: 80%;
-                }
-            }
-
-            .texto5{
-                .img5{
-                    width: 60%;
+                .texto5{
+                    .img5{
+                        width: 60%;
+                    }
                 }
             }
     }
@@ -549,6 +598,38 @@
             background: none;
         }
     }
+
+    /*!------NOSOTROS------------*/
+    section{
+        .nosotros{
+            div{
+                .divTitulo{
+                    h3{
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .texto1{
+                    .img1{
+                        width: 95%;
+                    }
+                }
+
+                .texto2{
+                    .img2{
+                        width: 55%;
+                    }
+                }
+
+                .texto3{
+                    .img3{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -580,25 +661,20 @@
                 font-size: 2.5rem;
             }
 
-            h3{
-                font-size: 1.7rem;
-            }
-
-            .texto1{
-                .img1{
-                    width: 90%;
+            div{
+                .divTitulo{
+                    h3{
+                        font-size: 1.5rem;
+                        height: 7vh;
+                        font-weight: bolder;
+                        padding-top: 7px;
+                    }
                 }
-            }
-
-            .texto2{
-                .img2{
-                    width: 60%;
-                }
-            }
-
-            .texto3{
-                .img3{
-                    width: 90%;
+    
+                .texto2{
+                    .img2{
+                        width: 60%;
+                    }
                 }
             }
         }
@@ -630,17 +706,29 @@
                 font-size: 2.1rem;
             }
 
-            .texto1{
-                .img1{
-                    width: 100%;
-                    padding: 2px
+            div{
+                .divTitulo{
+                    font-size: 1.3;
                 }
-            }
 
-            .texto3{
-                .img3{
-                    width: 100%;
-                    padding: 2px
+                div{
+                    p{
+                        font-size: 1.05rem;
+                        width: 95%;
+                    }
+                }
+                .texto1{
+                    .img1{
+                        width: 100%;
+                        padding: 2px
+                    }
+                }
+    
+                .texto3{
+                    .img3{
+                        width: 100%;
+                        padding: 2px
+                    }
                 }
             }
         }
@@ -737,6 +825,23 @@
                 div{
                     img{
                         width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*!------NOSOTROS------------*/
+
+    section{
+        .nosotros{
+            div{
+                .divTitulo{
+                    h3{
+                        font-size: 1.3rem;
+                        padding-top: 10px;
+                        height: 5vh;
                     }
                 }
             }
