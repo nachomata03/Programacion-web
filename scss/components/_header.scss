@@ -1,9 +1,19 @@
 header{
     background-color: $color-principal;
+    /* height: 13vh; */
 
     nav{
         
         .container-fluid{
+            margin: 5px 10px 5px 0;
+
+            .navbar-brand{
+                img{
+                    width: 125%;
+                    height: 8vh;
+                    padding-right: 5px;
+                }
+            }
 
             .collapse{
 

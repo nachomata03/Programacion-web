@@ -70,7 +70,7 @@
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
         .services{
             .delivery{
                 flex-direction: column;
@@ -192,7 +192,7 @@
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
         .services{
             display: flex;
             flex-direction: column;
@@ -213,7 +213,7 @@
                 div{
                     flex-direction: column;
                     img{
-                        width: 30%;
+                        width: 50%;
 
                     }
 
@@ -230,7 +230,7 @@
 @media screen and (max-width: 850px){
 /*!------SERVICIOS------------*/
 
-section{
+.servicios{
     .services{
         .mercadolibre{
             div{
@@ -309,7 +309,7 @@ section{
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
         .services{
             .delivery{
                 div{
@@ -345,7 +345,7 @@ section{
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
         .services{
             .delivery{
                 div{
@@ -367,6 +367,18 @@ section{
 }
 
 @media screen and (max-width: 700px){
+    /*! ----INDEX----*/
+    #hero{
+        div{
+            h2{
+                width: 80%;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    /*! ----PRODUCTOS----*/
     .productos{
         .contenedor-grid{
             .producto{
@@ -463,7 +475,10 @@ section{
     }   
     
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
+        h2{
+            background: radial-gradient(circle, rgba(255,255,255,0.5382528011204482) 24%, rgba(215,142,241,1) 73%, rgba(0,0,0,1) 100%);
+        }
         .services{
             .delivery{
                 div{
@@ -505,7 +520,10 @@ section{
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
+        h2{
+            background: radial-gradient(circle, rgba(255,255,255,0.5382528011204482) 24%, rgba(215,142,241,1) 69%);
+        }
         .services{
             .delivery{
                 div{
@@ -524,6 +542,13 @@ section{
             }
         }
     }
+
+    /*!------PRODUCTOS------------*/
+    .productos{
+        .contenedor-grid{
+            background: none;
+        }
+    }
 }
 
 
@@ -531,14 +556,19 @@ section{
     /*! ----INDEX----*/
     .Bienvenidos{
         div{
-            .divMedia{
-                p{
-                    font-size: 17px;
-                }
-                
+            .divMedia{                
                 img{
                     object-fit: contain;
                 }
+            }
+        }
+    }
+
+    #hero{
+        div{
+            top: 5%;
+            h2{
+                font-size: 35px;
             }
         }
     }
@@ -571,6 +601,13 @@ section{
                     width: 90%;
                 }
             }
+        }
+    }
+
+    /*!------SERVICIOS------------*/
+    .servicios{
+        h2{
+            font-size: 2.5rem;
         }
     }
 }
@@ -683,7 +720,10 @@ section{
     }
 
     /*!------SERVICIOS------------*/
-    section{
+    .servicios{
+        h2{
+            font-size: 2.2rem;
+        }
         .services{
             .delivery{
                 div{

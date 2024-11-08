@@ -3,34 +3,42 @@
 main{
 
     .hero{
-        background-image: url(../../img/hero.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../img/hero.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         height: 74vh;
         color: $color-secundario;
+
         div{
             @include flex-direction(flex, column, center);
 
+            position: relative;
+            top: 25%;
+
+            transition-delay: 2s;
+
             h2{
                 text-align: center;
-                font-size: 30px;
+                font-size: 45px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                padding: 4px;
+                padding: 8px;
                 margin: 4px;
                 color: nth($colores, 1);
                 border: 4px solid $color-secundario;
-                border-radius: 5px;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.726);
+                text-shadow: -6px 4px 5px rgba(173, 173, 243, 0.85);
             }
 
             p{
                 margin-top: 25px;
                 text-align: center;
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: bold;
                 padding: 10px;
-                color: nth($colores, 1);
+                color: $color-secundario;
                 width: 80%;
             }
 
@@ -76,6 +84,7 @@ main{
                         p{
                             font-size: 20px;
                             width: 100%;
+                            text-align: left;
                         }
                         
 
@@ -219,6 +228,7 @@ section{
 }
 
 .form{
+    background-color: #ccc3c396;
     .tituloform{
         text-align: center;
         background-color: $color-principal;
@@ -240,6 +250,18 @@ section{
 
                     textarea{
                         width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                div{
+                    button{
+                        background-color: nth($colores, 5);
+                        border: none;
+
+                        &:hover{
+                            transform: scale(1.05);
+                        }
                     }
                 }
             }
@@ -255,7 +277,7 @@ section{
 
         h2{
             background-image: url(../img/low-poly-grid-haikei.png);
-            color: #000000;
+            color: nth($colores, 1 );
             padding: 15px;
             text-align: center;
             font-size: 5rem;
@@ -264,16 +286,14 @@ section{
 
         h3{
             font-size: 3em;
-            margin-top: 30px;
-            display: inline-block;
+            margin-top: 6rem;
             background: radial-gradient(#adadf3,#ffffff);
-            border: #adadf3 solid 5px;
             border-radius: 10px;
         }
 
         div{
             @include flex(flex, space-evenly, center);
-            margin-top: 10px;
+            margin-top: 25px;
 
             p{
                 width: 40%;
@@ -314,9 +334,26 @@ section{
 
 //!----------SERVICIOS-----------
 
-section{
+.servicios{
     h2{
         text-align: center;
+        font-size: 3rem;
+        background: radial-gradient(circle, rgba(255,255,255,0.5382528011204482) 15%, rgba(215,142,241,1) 53%, rgba(0,0,0,1) 94%);
+        height: 10vh;
+        padding-top: 15px;
+        animation: 3s ease-in-out slide-in;
+        
+    }
+
+    @keyframes slide-in {
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0;
+            width: 100%;
+        }
     }
 
     .services{
@@ -327,6 +364,7 @@ section{
             
             h3{
                 padding: 10px;
+                font-size: 2rem
             }
             
         }
@@ -341,6 +379,11 @@ section{
 
                 p{
                     width: 60%;
+                }
+
+                img{
+                    width: 250px;
+                    height: 250px
                 }
             }
 
@@ -367,11 +410,18 @@ section{
 //!----------PRODUCTOS-----------
 
 .productos{
-
+    text-align: center;
     .productos-H2{
-        background: linear-gradient(180deg, $color-principal 35%, $color-secundario 100%);
-        padding: 15px;
+        padding: 30px;
         text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: Helvetica;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        display: inline-block;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
     .contenedor-grid{
@@ -380,25 +430,45 @@ section{
         grid-auto-rows: 400px;
         row-gap: 5px;
         column-gap: 5px;
-        padding: 0 5px 5px 5px;
+        padding: 0 10px 5px 10px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.5382528011204482) 25%, rgba(0,0,0,1) 100%);
+
 
         .producto{
-            border: 2px solid black;
-            @include flex-direction(flex, column, center);
+            background-image: linear-gradient(163deg, $color-principal 30%, $color-secundario 90%);
+            border-radius: 20px;
+            transition: transform 0.6s ease, box-shadow 0.9s ease;
 
-            img{
-                width: 50%;
-                height: 40vh;
-                object-fit:contain ;
+            &:hover{
+                box-shadow: 0px 0px 30px 1px rgb(79, 4, 141);
             }
 
-            p{
-                width: 80%;
+            .card2{
+                width: 98%;
+                height: 398px;
+                @include flex-direction(flex, column, center);
+
+                &:hover{
+                    transform: scale(0.98);
+                    border-radius: 20px;
+                }
+    
+                img{
+                    width: 50%;
+                    height: 40vh;
+                    object-fit:contain ;
+                }
+    
+                p{
+                    width: 80%;
+                    text-align: center
+                }
+                
+                a{
+                    @extend %boton
+                }
             }
             
-            a{
-                @extend %boton
-            }
         }
     }
 }
